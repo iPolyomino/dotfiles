@@ -34,6 +34,13 @@ PROMPT2='[%n]> '
 
 SPROMPT="%{$fg[red]%}%{$suggest%}(*'~'%)? < Did you mean %B%r%b %{$fg[red]%}? [Yes!(y), No!(n),a,e]:${reset_color} "
 
+alias ls="ls --color=auto"
+alias la="ls -a"
+alias ll="ls -l"
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+alias mkidr="mkdir -p"
 alias pbcopy="xsel -ib"
 alias pbpaste="xsel -ob"
 alias emacs="emacs -nw"
@@ -61,4 +68,3 @@ fi
 
 # Then, source plugins and add commands to $PATH
 zplug load
-
