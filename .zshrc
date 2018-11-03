@@ -47,6 +47,16 @@ PROMPT2='[%n]> '
 
 SPROMPT="%{$fg[red]%}%{$suggest%}(*'~'%)? < Did you mean %B%r%b %{$fg[red]%}? [Yes!(y), No!(n),a,e]:${reset_color} "
 
+export GOPATH="$HOME/go"
+export PATH="$PATH:$HOME/go/bin"
+
+export PATH="$PATH:$HOME/.cargo/bin"
+
+if [ -d $HOME/.anyenv ]; then
+    export PATH="$HOME/.anyenv/bin:$PATH"
+    eval "$(anyenv init -)"
+fi
+
 alias ls="ls --color=auto"
 alias la="ls -a"
 alias ll="ls -l"
@@ -54,9 +64,10 @@ alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
 alias mkidr="mkdir -p"
+alias emacs="emacs -nw"
+
 alias pbcopy="xsel -ib"
 alias pbpaste="xsel -ob"
-alias emacs="emacs -nw"
 alias open="xdg-open"
 
 # zplug settings
