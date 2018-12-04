@@ -50,7 +50,10 @@ SPROMPT="%{$fg[red]%}%{$suggest%}(*'~'%)? < Did you mean %B%r%b %{$fg[red]%}? [Y
 export GOPATH="$HOME/go"
 export PATH="$PATH:$HOME/go/bin"
 
+export PATH="$PATH:$HOME/.local/bin"
+
 export PATH="$PATH:$HOME/.cargo/bin"
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 if [ -d $HOME/.anyenv ]; then
     export PATH="$HOME/.anyenv/bin:$PATH"
@@ -69,6 +72,9 @@ alias emacs="emacs -nw"
 alias pbcopy="xsel -ib"
 alias pbpaste="xsel -ob"
 alias open="xdg-open"
+
+alias localhost="php -S localhost:8000"
+alias lh="localhost >> /dev/null 2>&1 &"
 
 # zplug settings
 
