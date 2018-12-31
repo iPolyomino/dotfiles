@@ -20,9 +20,10 @@ set wildmode=list:longest
 nnoremap j gj
 nnoremap k gk
 
-set list listchars=tab:\▸\-
+" set list listchars=eol:¬,tab:\▸\-,trail:~,extends:>,precedes:<,space:␣
 set expandtab
-set tabstop=4
+set tabstop=8
+set noexpandtab
 set shiftwidth=4
 
 set ignorecase
@@ -32,6 +33,6 @@ set wrapscan
 set hlsearch
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
-imap <C-j> <esc>
+imap fd <esc>
 
 set backspace=indent,eol,start
