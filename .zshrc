@@ -47,19 +47,6 @@ PROMPT2='[%n]> '
 
 SPROMPT="%{$fg[red]%}%{$suggest%}(*'~'%)? < Did you mean %B%r%b %{$fg[red]%}? [Yes!(y), No!(n),a,e]:${reset_color} "
 
-export GOPATH="$HOME/go"
-export PATH="$PATH:$HOME/go/bin"
-
-export PATH="$PATH:$HOME/.local/bin"
-
-export PATH="$PATH:$HOME/.cargo/bin"
-export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
-
-if [ -d $HOME/.anyenv ]; then
-    export PATH="$HOME/.anyenv/bin:$PATH"
-    eval "$(anyenv init -)"
-fi
-
 alias ls="ls --color=auto"
 alias la="ls -a"
 alias ll="ls -l"
@@ -67,34 +54,3 @@ alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
 alias mkidr="mkdir -p"
-alias emacs="emacs -nw"
-
-alias pbcopy="xsel -ib"
-alias pbpaste="xsel -ob"
-alias open="xdg-open"
-
-alias localhost="php -S localhost:8000"
-alias lh="localhost >> /dev/null 2>&1 &"
-
-# zplug settings
-
-source ~/.zplug/init.zsh
-
-zplug "zplug/zplug", hook-build:'zplug --self-manage'
-zplug "mafredri/zsh-async"
-zplug "zsh-users/zsh-history-substring-search"
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-completions"
-zplug "chrissicool/zsh-256color"
-zplug "zsh-users/zsh-syntax-highlighting"
-
-# Install plugins if there are plugins that have not been installed
-if ! zplug check --verbose; then
-  printf "Install? [y/N]: "
-  if read -q; then
-    echo; zplug install
-  fi
-fi
-
-# Then, source plugins and add commands to $PATH
-zplug load
