@@ -1,0 +1,10 @@
+alias ls="ls --color=auto"
+alias la="ls -a"
+alias ll="ls -l"
+alias rm="rm -i"
+alias cp="cp -i"
+alias mv="mv -i"
+alias mkidr="mkdir -p"
+
+alias e="emacs"
+alias g="git"
