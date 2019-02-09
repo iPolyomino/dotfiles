@@ -8,3 +8,10 @@ alias mkidr="mkdir -p"
 
 alias e="emacs"
 alias g="git"
+
+alias pbcopy="xsel -ib"
+alias pbpaste="xsel -ob"
+# alias open="xdg-open"
+
+alias localhost="php -S localhost:8000"
+alias lh="localhost >> /dev/null 2>&1 &"
