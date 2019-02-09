@@ -1,0 +1,14 @@
+[alias]
+	co = checkout
+	br = branch
+	st = status
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[ghq]
+	root = ~/go/src/
+
+[user]
+	email = macbookpromacbookpromacbookpro@gmail.com
+	name = iPolyomino
