@@ -6,3 +6,6 @@ export SAVEHIST=100000
 # golang
 export GOPATH="$HOME/go"
 export PATH="$PATH:$HOME/go/bin"
+
+# zplug
+export ZPLUG_HOME=/usr/local/opt/zplug
