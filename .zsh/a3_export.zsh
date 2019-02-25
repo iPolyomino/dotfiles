@@ -7,5 +7,8 @@ export SAVEHIST=100000
 export GOPATH="$HOME/go"
 export PATH="$PATH:$HOME/go/bin"
 
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
