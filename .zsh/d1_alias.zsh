@@ -7,7 +7,10 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias mkidr="mkdir -p"
 
-alias e="emacs"
+alias ed="emacs --daemon"
+alias e="emacsclient -t"
+alias kill-emacs="emacsclient -e '(kill-emacs)'"
+
 alias g="git"
 
 alias pbcopy="xsel -ib"
