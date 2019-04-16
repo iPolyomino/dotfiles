@@ -36,3 +36,5 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 imap fd <esc>
 
 set backspace=indent,eol,start
+
+cnoremap w!! w !sudo tee > /dev/null %<CR> :e!<CR>
