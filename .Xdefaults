@@ -1,0 +1,57 @@
+! Rxvt
+Rxvt*geometry:			80x35
+Rxvt*font:			terminus-24
+Rxvt*boldFont:			terminus-bold-24
+Rxvt*loginShell:		on
+Rxvt*visualBell:		on
+Rxvt*scrollBar:			off
+Rxvt*borderColor:		aquamarine4
+
+! 0=black, 1=red,  2=green,  3=yellow,  4=blue, 5=magenta,  6=cyan,  7=white
+
+urxvt*cursorColor: #804000
+
+urxvt*background: #293134
+urxvt*foreground: #E0E2E4
+
+!! black colors
+urxvt*color0: #000000
+urxvt*color8: #555555
+!! red colors
+urxvt*color1: #A50001
+urxvt*color9: #FF0003
+
+!! green dark/light
+urxvt*color2: #00BB00
+urxvt*color10: #93C863
+ 
+!! yellow dark/light
+urxvt*color3: #FECC22
+urxvt*color11: #FEF874
+ 
+!! blue dark/light
+urxvt*color4: #3A9BDB
+urxvt*color12: #A1D7FF
+ 
+!! magenta dark/light
+urxvt*color5: #BB00BB
+urxvt*color13: #FF55FF
+ 
+!! cyan dark/light
+urxvt*color6: #00BBBB
+urxvt*color14: #55FFFF
+ 
+!! white dark/light
+urxvt*color7: #bbbbbb
+urxvt*color15: #ffffff
+
+! Emacs
+Emacs.geometry:			80x54
+Emacs.foreground:		white
+Emacs.background:		#172727
+Emacs.cursorColor:		aquamarine1
+Emacs.font:			terminus-18
+Emacs.toolBar:			off
+Emacs.menuBar:			off
+Emacs.verticalScrollBars:	off
+Emacs.reverseVideo:		off

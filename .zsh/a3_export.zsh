@@ -4,12 +4,16 @@ export HISTSIZE=1000
 export SAVEHIST=100000
 
 # golang
-export GOPATH="$HOME/go"
-export PATH="$PATH:$HOME/go/bin"
+if [ -d $HOME/go ]; then
+    export GOPATH="$HOME/go"
+    export PATH="$PATH:$HOME/go/bin"
+fi
 
 # rust
-export PATH="$HOME/.cargo/bin:$PATH"
-export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+if [ -d $HOME/.cargo ]; then
+    export PATH="$HOME/.cargo/bin:$PATH"
+    export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+fi
 
 # anyenv
 if [ -d $HOME/.anyenv ]; then
