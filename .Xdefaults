@@ -1,7 +1,7 @@
 ! Rxvt
 Rxvt*geometry:			80x35
-Rxvt*font:			xft:source code pro:regular:pixelsize=18
-Rxvt*boldFont:			xft:source code pro:semibold:pixelsize=18
+Rxvt*font:			terminus-24
+Rxvt*boldFont:			terminus-bold-24
 Rxvt*loginShell:		on
 Rxvt*visualBell:		on
 Rxvt*scrollBar:			off
