@@ -9,40 +9,40 @@ Rxvt*borderColor:		aquamarine4
 
 ! 0=black, 1=red,  2=green,  3=yellow,  4=blue, 5=magenta,  6=cyan,  7=white
 
-urxvt*cursorColor: #804000
+urxvt*cursorColor: #ffffff
 
 urxvt*background: #293134
 urxvt*foreground: #E0E2E4
 
 !! black colors
-urxvt*color0: #000000
-urxvt*color8: #555555
+urxvt*color0:  #000000
+urxvt*color8:  #666666
 !! red colors
-urxvt*color1: #A50001
-urxvt*color9: #FF0003
+urxvt*color1:  #d54e53
+urxvt*color9:  #ff3334
 
 !! green dark/light
-urxvt*color2: #00BB00
-urxvt*color10: #93C863
+urxvt*color2:  #b9ca4a
+urxvt*color10: #9ec400
  
 !! yellow dark/light
-urxvt*color3: #FECC22
-urxvt*color11: #FEF874
+urxvt*color3:  #e6c547
+urxvt*color11: #e7c547
  
 !! blue dark/light
-urxvt*color4: #3A9BDB
-urxvt*color12: #A1D7FF
+urxvt*color4:  #7aa6da
+urxvt*color12: #7aa6da
  
 !! magenta dark/light
-urxvt*color5: #BB00BB
-urxvt*color13: #FF55FF
+urxvt*color5:  #c397d8
+urxvt*color13: #b77ee0
  
 !! cyan dark/light
-urxvt*color6: #00BBBB
-urxvt*color14: #55FFFF
+urxvt*color6:  #70c0ba
+urxvt*color14: #70c0ba
  
 !! white dark/light
-urxvt*color7: #bbbbbb
+urxvt*color7:  #ffffff
 urxvt*color15: #ffffff
 
 ! Emacs

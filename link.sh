@@ -14,3 +14,7 @@ ln -sf ~/.dotfiles/.zsh ~/.zsh
 # git
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/.gitignore_global ~/.gitignore_global
+
+# X Window System
+ln -sf ~/.dotfiles/.Xdefaults ~/.Xdefaults
+ln -sf ~/.dotfiles/.xinitrc ~/.xinitrc
