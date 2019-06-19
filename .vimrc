@@ -22,8 +22,8 @@ nnoremap k gk
 
 " set list listchars=eol:¬,tab:\▸\-,trail:~,extends:>,precedes:<,space:␣
 set expandtab
-set tabstop=8
-set noexpandtab
+set tabstop=4
+" set noexpandtab
 set shiftwidth=4
 
 set ignorecase
