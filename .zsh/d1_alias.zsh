@@ -6,6 +6,7 @@ alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
 alias mkidr="mkdir -p"
+alias grep="grep --color"
 
 alias ed="emacs --daemon"
 alias e="emacsclient -t"
