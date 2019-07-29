@@ -1,14 +1,17 @@
 syntax on
 
-" setting
+" file setting
 set fenc=utf-8
 set nobackup
 set noswapfile
 set autoread
 set hidden
-set showcmd
 
+" display setting
+set showcmd
 set number
+set ruler
+set wrap
 set cursorline
 set cursorcolumn
 set virtualedit=onemore
@@ -17,27 +20,31 @@ set visualbell
 set showmatch
 set laststatus=2
 set wildmode=list:longest
-nnoremap j gj
-nnoremap k gk
 
-set list listchars=eol:¬,tab:\▸\-,trail:~,extends:>,precedes:<,space:␣
-set expandtab
-set tabstop=4
-set shiftwidth=4
-
+" search settings
 set ignorecase
 set smartcase
 set incsearch
 set wrapscan
 set hlsearch
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+" editing setup
+set list listchars=eol:¬,tab:\▸\-,trail:~,extends:>,precedes:<,space:␣
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set autoindent
 
 imap fd <esc>
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
+nnoremap j gj
+nnoremap k gk
 
 set backspace=indent,eol,start
 
 cnoremap w!! w !sudo tee > /dev/null %<CR> :e!<CR>
 
+" vimplug settings
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
@@ -55,6 +62,7 @@ Plug '~/.fzf'
 " Initialize plugin system
 call plug#end()
 
+" window control settings
 nnoremap s <Nop>
 nnoremap sj <C-w>j
 nnoremap sk <C-w>k
