@@ -50,7 +50,7 @@ Emacs.geometry:             80x54
 Emacs.foreground:           white
 Emacs.background:           #172727
 Emacs.cursorColor:          aquamarine1
-Emacs.font:                 terminus-18
+! Emacs.font:                 terminus-18
 Emacs.toolBar:              off
 Emacs.menuBar:              off
 Emacs.verticalScrollBars:   off
