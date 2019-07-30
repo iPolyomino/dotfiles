@@ -1,5 +1,11 @@
 #!/bin/sh
 
+export DefaultImModule=fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+fcitx-autostart
+
 xset +fp /usr/local/share/fonts
 setxkbmap -option ctrl:nocaps
 xset r rate 200 40
