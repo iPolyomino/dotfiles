@@ -46,12 +46,12 @@ urxvt*color7:  #ffffff
 urxvt*color15: #ffffff
 
 ! Emacs
-Emacs.geometry:			80x54
-Emacs.foreground:		white
-Emacs.background:		#172727
-Emacs.cursorColor:		aquamarine1
-Emacs.font:			terminus-18
-Emacs.toolBar:			off
-Emacs.menuBar:			off
-Emacs.verticalScrollBars:	off
-Emacs.reverseVideo:		off
+Emacs.geometry:             80x54
+Emacs.foreground:           white
+Emacs.background:           #172727
+Emacs.cursorColor:          aquamarine1
+Emacs.font:                 xft:source code pro:semibold:pixelsize=18
+Emacs.toolBar:              off
+Emacs.menuBar:              off
+Emacs.verticalScrollBars:   off
+Emacs.reverseVideo:         off
