@@ -36,7 +36,7 @@
 (setq indent-line-function 'insert-tab)
 
 ;; don't make backup file
-(setq make-backup-flies nil)
+(setq make-backup-files nil)
 (setq auto-save-default nil)
 (setq delete-auto-save-files t)
 
