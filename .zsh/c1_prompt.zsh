@@ -1,5 +1,5 @@
 PROMPT="
-[%n] %{${fg[yellow]}%}%~%{${reset_color}%}
+[%n@%m] %{${fg[yellow]}%}%~%{${reset_color}%}
 %(?.%{$fg[green]%}.%{$fg[blue]%})%(?!(*'-') <!(*;-;%)? <)%{${reset_color}%} "
 
 PROMPT2='[%n]> '
