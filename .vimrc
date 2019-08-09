@@ -57,7 +57,7 @@ Plug 'sbdchd/neoformat'
 
 Plug 'rust-lang/rust.vim'
 
-Plug '~/.fzf'
+Plug 'junegunn/fzf'
 
 " Initialize plugin system
 call plug#end()
