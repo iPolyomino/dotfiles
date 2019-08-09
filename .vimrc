@@ -29,7 +29,7 @@ set wrapscan
 set hlsearch
 
 " editing setup
-set list listchars=eol:¬,tab:\▸\-,trail:~,extends:>,precedes:<,space:␣
+" set list listchars=eol:¬,tab:\▸\-,trail:~,extends:>,precedes:<,space:␣
 set expandtab
 set tabstop=4
 set shiftwidth=4
