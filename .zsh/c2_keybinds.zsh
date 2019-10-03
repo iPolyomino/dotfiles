@@ -1,3 +1,5 @@
+bindkey -e
+
 function ghq-fzf() {
     local selected_dir=$(ghq list | fzf --query="$LBUFFER")
 

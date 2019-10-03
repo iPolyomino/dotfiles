@@ -1,6 +1,8 @@
 setopt correct
 setopt re_match_pcre
 setopt prompt_subst
+setopt ignore_eof
+setopt nobeep
 
 # history setting
 setopt hist_ignore_dups
@@ -17,3 +19,7 @@ setopt inc_append_history
 
 # complete setting
 setopt complete_in_word
+
+# directory control
+setopt auto_cd
+setopt auto_pushd

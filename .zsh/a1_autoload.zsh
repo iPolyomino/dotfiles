@@ -1,6 +1,6 @@
-# colors
-autoload -U colors
+autoload -Uz colors
+autoload -Uz compinit
+autoload -Uz cdr
 
-# vcs_info
 autoload -Uz vcs_info
 autoload -Uz add-zsh-hook
