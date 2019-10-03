@@ -8,6 +8,10 @@ alias mv="mv -i"
 alias mkidr="mkdir -p"
 alias grep="grep --color"
 
+alias ..="cd .."
+alias ...="cd ../../"
+alias ....="cd ../../../"
+
 alias ed="emacs --daemon"
 alias e="emacsclient -t"
 alias kill-emacs="emacsclient -e '(kill-emacs)'"
