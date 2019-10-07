@@ -34,6 +34,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set autoindent
+set clipboard=unnamedplus
 
 imap fd <esc>
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
