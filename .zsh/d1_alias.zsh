@@ -20,7 +20,10 @@ alias g="git"
 
 alias pbcopy="xsel -ib"
 alias pbpaste="xsel -ob"
-# alias open="xdg-open"
+
+alias open="xdg-open"
+alias utf8='nkf -Lu -w --overwrite'
+alias rawemacs="emacs -q -l ~/.rawemacs"
 
 alias localhost="php -S localhost:8000"
 alias lh="localhost >> /dev/null 2>&1 &"
