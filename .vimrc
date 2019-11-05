@@ -53,6 +53,8 @@ Plug 'justinmk/vim-dirvish'
 Plug 'Shougo/unite.vim'
 Plug 'kana/vim-submode'
 
+Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+
 Plug 'sheerun/vim-polyglot'
 Plug 'sbdchd/neoformat'
 
