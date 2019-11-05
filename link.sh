@@ -2,7 +2,7 @@
 
 # editor
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
-ln -sf ~/.dotfiles/.spacemacs ~/.spacemacs
+cp ~/.dotfiles/.spacemacs ~/.spacemacs
 
 # tmux
 ln -sf ~/.dotfiles/.tmux.conf ~/.tmux.conf
