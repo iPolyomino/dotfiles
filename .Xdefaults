@@ -1,7 +1,7 @@
 ! Rxvt
 Rxvt*geometry:          80x35
-Rxvt*font:              xft:source code pro:regular:pixelsize=18
-Rxvt*boldFont:          xft:source code pro:semibold:pixelsize=18
+Rxvt*font:              xft:source code pro:regular:pixelsize=24
+Rxvt*boldFont:          xft:source code pro:semibold:pixelsize=24
 Rxvt*loginShell:        on
 Rxvt*visualBell:        on
 Rxvt*scrollBar:         off
@@ -9,7 +9,7 @@ Rxvt*borderColor:       aquamarine4
 
 ! 0=black, 1=red, 2=green, 3=yellow, 4=blue, 5=magenta, 6=cyan, 7=white
 
-urxvt*cursorColor: #ffffff
+urxvt*cursorColor: #FFFFFF
 urxvt*background: #293134
 urxvt*foreground: #E0E2E4
 
