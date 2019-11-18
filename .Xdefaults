@@ -1,7 +1,9 @@
 ! Rxvt
 Rxvt*geometry:          80x35
-Rxvt*font:              xft:source code pro:regular:pixelsize=24
-Rxvt*boldFont:          xft:source code pro:semibold:pixelsize=24
+Rxvt*font:              xft:source code pro:regular:pixelsize=24,\
+                        xft:IPAExGothic:regular:pixelsize=24
+Rxvt*boldFont:          xft:source code pro:semibold:pixelsize=24,\
+                        xft:IPAExGothic:semibold:pixelsize=24
 Rxvt*loginShell:        on
 Rxvt*visualBell:        on
 Rxvt*scrollBar:         off
