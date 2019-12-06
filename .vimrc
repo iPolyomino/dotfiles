@@ -61,6 +61,8 @@ Plug 'sbdchd/neoformat'
 Plug 'rust-lang/rust.vim'
 
 Plug 'junegunn/fzf'
+Plug 'jceb/vim-orgmode'
+Plug 'tpope/vim-speeddating'
 
 " Initialize plugin system
 call plug#end()
