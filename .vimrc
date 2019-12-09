@@ -40,6 +40,7 @@ imap fd <esc>
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 nnoremap j gj
 nnoremap k gk
+nnoremap <C-l> zz
 
 set backspace=indent,eol,start
 
