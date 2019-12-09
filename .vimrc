@@ -56,11 +56,11 @@ Plug 'kana/vim-submode'
 Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 Plug 'sheerun/vim-polyglot'
-Plug 'sbdchd/neoformat'
 
 Plug 'rust-lang/rust.vim'
 
 Plug 'junegunn/fzf'
+Plug 'sbdchd/neoformat'
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-speeddating'
 
@@ -73,10 +73,10 @@ nnoremap sj <C-w>j
 nnoremap sk <C-w>k
 nnoremap sl <C-w>l
 nnoremap sh <C-w>h
-nnoremap sJ <C-w>J
-nnoremap sK <C-w>K
-nnoremap sL <C-w>L
-nnoremap sH <C-w>H
+nnoremap SJ <C-w>J
+nnoremap SK <C-w>K
+nnoremap SL <C-w>L
+nnoremap SH <C-w>H
 nnoremap sn gt
 nnoremap sp gT
 nnoremap sr <C-w>r
@@ -95,11 +95,11 @@ nnoremap sQ :<C-u>bd<CR>
 nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 
-call submode#enter_with('bufmove', 'n', '', 's>', '<C-w>>')
-call submode#enter_with('bufmove', 'n', '', 's<', '<C-w><')
-call submode#enter_with('bufmove', 'n', '', 's+', '<C-w>+')
-call submode#enter_with('bufmove', 'n', '', 's-', '<C-w>-')
-call submode#map('bufmove', 'n', '', '>', '<C-w>>')
-call submode#map('bufmove', 'n', '', '<', '<C-w><')
-call submode#map('bufmove', 'n', '', '+', '<C-w>+')
-call submode#map('bufmove', 'n', '', '-', '<C-w>-')
+call submode#enter_with('bufmove', 'n', '', 'sL', '<C-w>>')
+call submode#enter_with('bufmove', 'n', '', 'sH', '<C-w><')
+call submode#enter_with('bufmove', 'n', '', 'sK', '<C-w>+')
+call submode#enter_with('bufmove', 'n', '', 'sJ', '<C-w>-')
+call submode#map('bufmove', 'n', '', 'L', '<C-w>>')
+call submode#map('bufmove', 'n', '', 'H', '<C-w><')
+call submode#map('bufmove', 'n', '', 'K', '<C-w>+')
+call submode#map('bufmove', 'n', '', 'J', '<C-w>-')
