@@ -104,3 +104,6 @@ call submode#map('bufmove', 'n', '', 'L', '<C-w>>')
 call submode#map('bufmove', 'n', '', 'H', '<C-w><')
 call submode#map('bufmove', 'n', '', 'K', '<C-w>+')
 call submode#map('bufmove', 'n', '', 'J', '<C-w>-')
+
+"nerdtree
+nnoremap <C-d> :NERDTreeToggle<CR>
