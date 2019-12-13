@@ -27,5 +27,5 @@ repo = 'jceb/vim-orgmode'
 on_ft = ['org']
 
 [[plugins]]
-repo = 'rcmdnk/vim-markdown'
+repo = 'plasticboy/vim-markdown'
 on_ft = ['md', 'markdown']
