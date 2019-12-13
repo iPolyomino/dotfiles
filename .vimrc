@@ -62,6 +62,7 @@ Plug 'rust-lang/rust.vim'
 
 Plug 'junegunn/fzf'
 Plug 'sbdchd/neoformat'
+Plug 'lervag/vimtex'
 Plug 'jceb/vim-orgmode'
 Plug 'tpope/vim-speeddating'
 
@@ -107,3 +108,5 @@ call submode#map('bufmove', 'n', '', 'J', '<C-w>-')
 
 "nerdtree
 nnoremap <C-d> :NERDTreeToggle<CR>
+"polyglot
+let g:polyglot_disabled = ['latex']
