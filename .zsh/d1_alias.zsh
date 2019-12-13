@@ -17,6 +17,7 @@ alias e="emacsclient -t"
 alias kill-emacs="emacsclient -e '(kill-emacs)'"
 
 alias g="git"
+alias v="nvim"
 
 alias pbcopy="xsel -ib"
 alias pbpaste="xsel -ob"
