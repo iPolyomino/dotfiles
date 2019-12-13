@@ -1,0 +1,28 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'kana/vim-submode'
+hook_add = '''
+  call submode#enter_with('bufmove', 'n', '', 'sL', '<C-w>>')
+  call submode#enter_with('bufmove', 'n', '', 'sH', '<C-w><')
+  call submode#enter_with('bufmove', 'n', '', 'sK', '<C-w>+')
+  call submode#enter_with('bufmove', 'n', '', 'sJ', '<C-w>-')
+  call submode#map('bufmove', 'n', '', 'L', '<C-w>>')
+  call submode#map('bufmove', 'n', '', 'H', '<C-w><')
+  call submode#map('bufmove', 'n', '', 'K', '<C-w>+')
+  call submode#map('bufmove', 'n', '', 'J', '<C-w>-')
+'''
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = 'nnoremap <C-d> :NERDTreeToggle<CR>'
+
+[[plugins]]
+repo = 'justinmk/vim-dirvish'
+hook_add = '''
+  let g:polyglot_disabled = ['latex']
+'''
+
+[[plugins]]
+repo = 'powerline/powerline'

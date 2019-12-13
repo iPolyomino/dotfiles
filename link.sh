@@ -1,7 +1,13 @@
 #!/bin/sh
 
+# config directory
+if [ ! -d $HOME/.config ]; then
+    mkdir ~/.config
+fi
+
 # editor
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc
+ln -sf ~/.dotfiles/.config/nvim ~/.config/nvim
 cp ~/.dotfiles/.spacemacs ~/.spacemacs
 ln -sf ~/.dotfiles/.rawemacs ~/.rawemacs
 
@@ -19,3 +25,6 @@ ln -sf ~/.dotfiles/.gitignore_global ~/.gitignore_global
 # X Window System
 ln -sf ~/.dotfiles/.Xdefaults ~/.Xdefaults
 ln -sf ~/.dotfiles/.xinitrc ~/.xinitrc
+
+# i3
+ln -sf ~/.dotfiles/.config/i3 ~/.config/i3

@@ -1,0 +1,31 @@
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = ['go']
+
+[[plugins]]
+repo = 'rust-lang/rust.vim''
+on_ft = ['rust']
+hook_source = '''
+  let g:rustfmt_autosave = 1
+  let g:rust_doc#define_map_K = 0
+'''
+
+[[plugins]]
+repo  = 'mattn/emmet-vim'
+on_ft = ['css','html']
+
+[[plugins]]
+repo = 'lervag/vimtex'
+on_ft = ['tex']
+
+[[plugins]]
+repo = 'tpope/vim-speeddating'
+on_ft = ['org']
+
+[[plugins]]
+repo = 'jceb/vim-orgmode'
+on_ft = ['org']
+
+[[plugins]]
+repo = 'rcmdnk/vim-markdown'
+on_ft = ['md', 'markdown']
