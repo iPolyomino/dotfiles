@@ -46,6 +46,8 @@ set backspace=indent,eol,start
 
 cnoremap w!! w !sudo tee > /dev/null %<CR> :e!<CR>
 
+tnoremap <Esc> <C-\><C-n>
+
 " window control settings
 nnoremap s <Nop>
 nnoremap sj <C-w>j

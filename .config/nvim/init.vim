@@ -73,6 +73,8 @@ nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 
 cnoremap w!! w !sudo tee > /dev/null %<CR> :e!<CR>
 
+tnoremap <Esc> <C-\><C-n>
+
 " dein.vim
 if &compatible
   set nocompatible
