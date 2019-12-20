@@ -2,6 +2,18 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
 repo = 'kana/vim-submode'
 hook_add = '''
   call submode#enter_with('bufmove', 'n', '', 'sL', '<C-w>>')
@@ -34,3 +46,6 @@ build = './install --bin'
 [[plugins]]
 repo = 'junegunn/fzf.vim'
 depends = 'fzf'
+
+[[plugins]]
+repo = 'sbdchd/neoformat'
