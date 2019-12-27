@@ -154,3 +154,9 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# browser
+bindsym $mod+i exec firefox
+
+# screen lock
+bindsym $mod+backslash exec i3lock-fancy
