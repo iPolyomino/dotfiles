@@ -23,7 +23,7 @@ alias pbcopy="xsel -ib"
 alias pbpaste="xsel -ob"
 
 alias open="xdg-open"
-alias net="sudo service networking restart"
+alias nr="/usr/sbin/service networking restart"
 alias utf8="nkf -Lu -w --overwrite"
 alias rawemacs="emacs -q -l ~/.rawemacs"
 
