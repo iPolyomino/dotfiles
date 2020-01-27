@@ -2,6 +2,8 @@ syntax on
 
 " file setting
 set fenc=utf-8
+set fileencodings=utf-8,euc-jp,sjis,
+set fileformats=unix,mac,dos
 set nobackup
 set noswapfile
 set autoread
