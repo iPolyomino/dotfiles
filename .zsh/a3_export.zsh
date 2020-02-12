@@ -1,4 +1,5 @@
 export EDITOR=vim
+export MAKEFILES=${HOME}/.Makefile
 
 # history setting
 export HISTFILE=${HOME}/.zsh_history

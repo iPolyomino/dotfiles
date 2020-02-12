@@ -11,6 +11,9 @@ ln -sf ~/.dotfiles/.config/nvim ~/.config/nvim
 cp ~/.dotfiles/.spacemacs ~/.spacemacs
 ln -sf ~/.dotfiles/.rawemacs ~/.rawemacs
 
+# makefile
+ln -sf ~/.dotfiles/.Makefile ~/.Makefile
+
 # tmux
 ln -sf ~/.dotfiles/.tmux.conf ~/.tmux.conf
 
