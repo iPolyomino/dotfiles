@@ -31,3 +31,6 @@ ln -sf ~/.dotfiles/.xinitrc ~/.xinitrc
 
 # i3
 ln -sf ~/.dotfiles/.config/i3 ~/.config/i3
+
+# alacritty
+ln -sf ~/.dotfiles/.config/alacritty ~/.config/alacritty
