@@ -21,7 +21,8 @@ set smartindent
 set visualbell
 set showmatch
 set laststatus=2
-set wildmode=list:longest
+set wildmode=longest,list,full
+set wildmenu
 
 " search settings
 set ignorecase
