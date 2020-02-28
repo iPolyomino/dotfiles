@@ -41,6 +41,14 @@ hook_source = '''
 '''
 
 [[plugins]]
+repo = 'leafgarland/typescript-vim'
+on_ft = ['ts', 'tsx']
+
+[[plugins]]
+repo = 'peitalin/vim-jsx-typescript'
+on_ft = ['ts', 'tsx']
+
+[[plugins]]
 repo = 'fatih/vim-go'
 on_ft = ['go']
 
