@@ -49,3 +49,9 @@ depends = 'fzf'
 
 [[plugins]]
 repo = 'sbdchd/neoformat'
+hook_add = '''
+  augroup fmt
+    autocmd!
+    autocmd BufWritePre * undojoin | Neoformat
+  augroup END
+'''
