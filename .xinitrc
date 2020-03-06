@@ -12,5 +12,5 @@ xset r rate 200 40
 
 xpywm 2>/tmp/xpywm.log &
 xpymon 2>/tmp/xpymon.log &
-xpylog 2>/tmp/xpylog.log &
-urxvt -e tmux
+# xpylog 2>/tmp/xpylog.log &
+alacritty -e tmux
