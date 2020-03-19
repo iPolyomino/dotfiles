@@ -155,6 +155,9 @@ bar {
         status_command i3status
 }
 
+# emacs
+bindsym $mod+u exec emacs
+
 # browser
 bindsym $mod+i exec firefox
 
