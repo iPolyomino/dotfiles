@@ -155,11 +155,14 @@ bar {
         status_command i3status
 }
 
+# terminal
+bindsym Mod1+Control+1 exec pidof alacritty || alacritty -e tmux
+
 # emacs
-bindsym $mod+u exec emacs
+bindsym Mod1+Control+2 exec pidof emacs || emacs &
 
 # browser
-bindsym $mod+i exec firefox
+bindsym Mod1+Control+3 exec pidof firefox || firefox &
 
 # screen lock
 bindsym $mod+backslash exec i3lock-fancy
