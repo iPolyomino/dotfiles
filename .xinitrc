@@ -10,7 +10,9 @@ xset +fp /usr/local/share/fonts
 setxkbmap -option ctrl:nocaps
 xset r rate 200 40
 
-xpywm 2>/tmp/xpywm.log &
-xpymon 2>/tmp/xpymon.log &
+exec i3
+
+# xpywm 2>/tmp/xpywm.log &
+# xpymon 2>/tmp/xpymon.log &
 # xpylog 2>/tmp/xpylog.log &
-alacritty -e tmux
+# alacritty -e tmux
