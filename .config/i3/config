@@ -155,6 +155,9 @@ bar {
         status_command i3status
 }
 
+# set wallpaper
+exec --no-startup-id feh --randomize --bg-scale ~/.config/i3/wallpapers/*
+
 # terminal
 bindsym Mod1+Control+1 exec pidof alacritty || alacritty -e tmux
 
@@ -165,7 +168,7 @@ bindsym Mod1+Control+2 exec pidof emacs || emacs &
 bindsym Mod1+Control+3 exec pidof firefox || firefox &
 
 # screen lock
-bindsym $mod+backslash exec i3lock-fancy
+bindsym $mod+backslash exec i3lock -i ~/.config/i3/wallpapers/wallpaper.png
 
 # resize and move a floating window
 bindsym Mod1+Control+apostrophe floating toggle, exec "wmctrl -i -r $(printf 0x%x $(xdotool getwindowfocus)) -e 0,0,0,800,600"
