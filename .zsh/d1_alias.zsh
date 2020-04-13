@@ -37,3 +37,13 @@ case ${OSTYPE} in
         alias nr="/usr/sbin/service networking restart"
         ;;
 esac
+
+function run_background() {
+    if type "$1" > /dev/null 2>&1; then
+        alias $1="$1 > /dev/null 2>&1 &"
+    fi
+}
+
+run_background mendeleydesktop
+run_background spotify
+run_background zoom
