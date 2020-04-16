@@ -4,8 +4,7 @@ function fh() {
 }
 
 # fkill - kill process
-fkill() {
-  local pid
+function fkill() {
   pid=$(ps -ef | sed 1d | fzf -m | awk '{print $2}')
 
   if [ "x$pid" != "x" ]
@@ -15,7 +14,7 @@ fkill() {
 }
 
 # fd - cd to selected directory
-fd() {
+function fd() {
   local dir
   dir=$(find ${1:-.} -path '*/\.*' -prune \
                   -o -type d -print 2> /dev/null | fzf +m) &&
@@ -23,7 +22,19 @@ fd() {
 }
 
 # fda - including hidden directories
-fda() {
+function fda() {
   local dir
   dir=$(find ${1:-.} -type d 2> /dev/null | fzf +m) && cd "$dir"
 }
+
+# estart - starting emacs daemon
+function estart() {
+  if ! emacsclient -e 0 > /dev/null 2>&1; then
+    ({
+      cd
+      emacs --daemon
+      cd -
+    } > /dev/null 2>&1 & )
+  fi
+}
+estart

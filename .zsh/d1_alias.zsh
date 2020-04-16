@@ -13,8 +13,11 @@ alias ...="cd ../../"
 alias ....="cd ../../../"
 
 alias ed="emacs --daemon"
-alias e="emacsclient -t"
-alias kill-emacs="emacsclient -e '(kill-emacs)'"
+alias ekill="emacsclient -e '(kill-emacs)'"
+alias erestart="ekill && estart"
+alias e="emacsclient -c"
+alias ec="emacsclient -c"
+alias et="emacsclient -t"
 alias rawemacs="emacs -q -l ~/.rawemacs"
 
 alias g="git"
