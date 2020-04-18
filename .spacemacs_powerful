@@ -328,10 +328,31 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   ;; Japanese font
   (set-fontset-font t 'japanese-jisx0208
-                    (font-spec :family "IPAExGothic"))
+                    (font-spec :family "Source Han Code JP N"))
 
   ;; delete backward char
   (keyboard-translate ?\C-h ?\C-?)
+
+  ;; mozc
+  (require 'mozc)
+  (setq default-input-method "japanese-mozc")
+  )
+
+  ;; lookup
+  (setq lookup-enable-splash nil)
+  (autoload 'lookup "lookup" nil t)
+  (autoload 'lookup-region "lookup" nil t)
+  (autoload 'lookup-pattern "lookup" nil t)
+  (global-set-key "\C-c\C-l" 'lookup)
+  (global-set-key "\C-cy" 'lookup-region)
+  (global-set-key "\C-c\C-y" 'lookup-pattern)
+  (setq lookup-search-agents
+        '(
+          (ndeb "~/dict/gakken_personal")
+          ))
+  (setq lookup-default-dictionary-options
+        '((:stemmer .  stem-english)))
+  (setq lookup-use-kakasi nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
