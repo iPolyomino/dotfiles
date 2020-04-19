@@ -34,3 +34,6 @@ ln -sf ~/.dotfiles/.config/i3 ~/.config/i3
 
 # alacritty
 ln -sf ~/.dotfiles/.config/alacritty ~/.config/alacritty
+
+# emoji
+ln -sf ~/.dotfiles/.config/fontconfig ~/.config/fontconfig
