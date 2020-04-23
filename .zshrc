@@ -1,5 +1,4 @@
 for i in ~/.zsh/*.zsh; do
-    echo $i
     if [ $i = "$HOME/.zsh/z1_zplug.zsh" ]; then
         [ -f ~/.zplug/init.zsh ] && source $i
     else
