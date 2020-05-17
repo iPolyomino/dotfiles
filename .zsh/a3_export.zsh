@@ -6,6 +6,12 @@ export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=100000
 
+# deno
+if [ -d $HOME/.deno ]; then
+    export DENO_INSTALL="/home/hagi/.deno"
+    export PATH="$DENO_INSTALL/bin:$PATH"
+fi
+
 # golang
 if [ -d $HOME/go ]; then
     export GOPATH="$HOME/go"
