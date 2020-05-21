@@ -40,6 +40,9 @@ hook_add = '''
 repo = 'powerline/powerline'
 
 [[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
 repo = 'junegunn/fzf'
 build = './install --bin'
 
