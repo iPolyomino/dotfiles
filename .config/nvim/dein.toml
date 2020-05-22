@@ -28,7 +28,7 @@ hook_add = '''
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
-hook_add = 'nnoremap <C-d> :NERDTreeToggle<CR>'
+hook_add = 'map <C-n> :NERDTreeToggle<CR>'
 
 [[plugins]]
 repo = 'justinmk/vim-dirvish'
