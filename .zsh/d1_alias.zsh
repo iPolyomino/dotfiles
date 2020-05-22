@@ -38,6 +38,8 @@ case ${OSTYPE} in
         alias x="mupdf"
 
         alias nr="/usr/sbin/service networking restart"
+
+        alias zoomannotate="xcompmgr -c -l0 -t0 -r0 -o.00"
         ;;
 esac
 
