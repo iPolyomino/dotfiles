@@ -49,6 +49,27 @@ repo = 'peitalin/vim-jsx-typescript'
 on_ft = ['typescript']
 
 [[plugins]]
+repo = 'jelera/vim-javascript-syntax'
+on_ft = ['javascript']
+hook_add = '''
+  let g:javascript_enable_domhtmlcss = 1
+'''
+
+[[plugins]]
+repo = 'sbdchd/neoformat'
+on_ft = ['html', 'javascript', 'css', 'typescript', 'markdown']
+hook_add = '''
+  augroup fmt
+    autocmd!
+    autocmd BufWritePre * undojoin | Neoformat
+  augroup END
+'''
+
+[[plugins]]
+repo  = 'mattn/emmet-vim'
+on_ft = ['html', 'css']
+
+[[plugins]]
 repo = 'fatih/vim-go'
 on_ft = ['go']
 
@@ -65,23 +86,13 @@ repo = 'racer-rust/vim-racer'
 on_ft = ['rust']
 
 [[plugins]]
-repo = 'sbdchd/neoformat'
-on_ft = ['html', 'js', 'css', 'typescript', 'markdown']
-hook_add = '''
-  augroup fmt
-    autocmd!
-    autocmd BufWritePre * undojoin | Neoformat
-  augroup END
-'''
-
-[[plugins]]
-repo  = 'mattn/emmet-vim'
-on_ft = ['html', 'css']
-
-[[plugins]]
 repo  = 'phpactor/phpactor'
 on_ft = ['php']
 build = 'composer install'
+
+[[plugins]]
+repo = 'arnaud-lb/vim-php-namespace'
+on_ft = ['php']
 
 [[plugins]]
 repo = 'lervag/vimtex'
