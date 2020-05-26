@@ -39,6 +39,8 @@ set shiftwidth=4
 set autoindent
 set clipboard=unnamedplus
 set backspace=indent,eol,start
+set formatoptions+=mM
+set textwidth=80
 
 imap fd <esc>
 nmap <Esc><Esc> :nohlsearch<CR><Esc>

@@ -29,3 +29,12 @@ if [ -d $HOME/.anyenv ]; then
     export PATH="$HOME/.anyenv/bin:$PATH"
     eval "$(anyenv init -)"
 fi
+
+# TeX
+if [ -d $HOME/.tex/inputs ]; then
+    export TEXINPUTS=$TEXINPUTS:$HOME/.tex/inputs/
+fi
+
+if [ -d $HOME/.tex/bib ]; then
+    export BIBINPUTS=$BIBINPUTS:$HOME/.tex/bib/
+fi
