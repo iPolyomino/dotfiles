@@ -10,4 +10,4 @@ sudo apt install alsa-utils net-tools wireless-tools dnsutils
 
 sudo apt install chromium mutt unar gv mirage mupdf evince
 
-sudo apt install bat jq moreutils xsel
+sudo apt install bat jq moreutils rsync xsel
