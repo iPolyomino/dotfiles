@@ -32,9 +32,9 @@ fi
 
 # TeX
 if [ -d $HOME/.tex/inputs ]; then
-    export TEXINPUTS=$TEXINPUTS:$HOME/.tex/inputs/
+    export TEXINPUTS="$TEXINPUTS:$HOME/.tex/inputs/"
 fi
 
 if [ -d $HOME/.tex/bib ]; then
-    export BIBINPUTS=$BIBINPUTS:$HOME/.tex/bib/
+    export BIBINPUTS="$BIBINPUTS:$HOME/.tex/bib/"
 fi
