@@ -37,9 +37,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'powerline/powerline'
-
-[[plugins]]
 repo = 'itchyny/lightline.vim'
 
 [[plugins]]
@@ -49,3 +46,22 @@ build = './install --bin'
 [[plugins]]
 repo = 'junegunn/fzf.vim'
 depends = 'fzf'
+
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+
+[[plugins]]
+repo = 'lighttiger2505/deoplete-vim-lsp'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+merged = '0'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-icons'
