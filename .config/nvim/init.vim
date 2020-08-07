@@ -47,6 +47,11 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 nnoremap j gj
 nnoremap k gk
 
+nnoremap <silent> [b :bprevios<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
 cnoremap w!! w !sudo tee > /dev/null %<CR> :e!<CR>
 
 tnoremap <Esc> <C-\><C-n>
