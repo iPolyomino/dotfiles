@@ -32,8 +32,7 @@ fi
 
 # TeX
 if [ -d $HOME/.tex/inputs ]; then
-    export TEXINPUTS="$TEXINPUTS:$HOME/.tex/inputs/"
-    export TEXINPUTS="$TEXINPUTS:$HOME/.tex/inputs/ieicejsp/"
+    export TEXINPUTS="$TEXINPUTS:$HOME/.tex/inputs//"
 fi
 
 if [ -d $HOME/.tex/bib ]; then
