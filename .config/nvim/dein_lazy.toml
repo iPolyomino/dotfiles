@@ -35,3 +35,10 @@ hook_add = '''
 repo = 'iamcco/markdown-preview.nvim'
 on_ft = ['markdown', 'pandoc.markdown', 'rmd']
 build = 'sh -c "cd app & yarn install"'
+
+[[plugins]]
+repo = 'xavierchow/vim-swagger-preview'
+on_ft = ['yaml']
+hook_add = '''
+  nmap <unique> <leader>e <Plug>GenerateDiagram
+'''
