@@ -1,25 +1,23 @@
-set editor = vim
+set editor = nvim
 set charset = "UTF-8"
-set record="/home/hagi/sent"
-set message_cachedir=~/.cache/mutt/messages
-source "~/.mutt/purgecache.sh '$message_cachedir'|"
+set record="/home/hagi/.mutt/sent"
 
 set ssl_starttls = yes
 set ssl_force_tls = yes
 
+set realname = "iPolyomino"
 set from = ""
 
 set imap_user = ""
 set imap_pass = ""
 
-# set folder = "imap://outlook.office365.com:143"
-# set spoolfile = "imap://outlook.office365.com/INBOX"
+set folder = "imap://outlook.office365.com:143"
+set spoolfile = "imap://outlook.office365.com/INBOX"
 set smtp_url = "smtp://$imap_user@smtp.office365.com:587"
 set smtp_pass = "$imap_pass"
 
-set mail_check=60
-# And poll the current mailbox more often (not needed with IDLE in post 1.5.11)
-set timeout=10
+set sort_aux = last-date-received
+set sort = reverse-threads
 
 bind pager j next-line
 bind pager k previous-line
@@ -31,3 +29,9 @@ bind attach,index g first-entry
 bind attach,index G last-entry
 
 bind index i imap-fetch-mail
+
+bind index,pager R group-reply
+
+bind index q noop
+bind index x noop
+bind index : noop
