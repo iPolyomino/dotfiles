@@ -155,6 +155,18 @@ bar {
         status_command i3status
 }
 
+# set primary and secondary workspace
+workspace  1 output primary
+workspace  2 output primary
+workspace  3 output primary
+workspace  4 output primary
+workspace  5 output primary
+workspace  6 output secondary
+workspace  7 output secondary
+workspace  8 output secondary
+workspace  9 output secondary
+workspace 10 output secondary
+
 # set wallpaper
 exec --no-startup-id feh --randomize --bg-scale ~/.config/i3/wallpapers/*
 
