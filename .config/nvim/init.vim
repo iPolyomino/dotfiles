@@ -34,8 +34,8 @@ set hlsearch
 " editing setup
 " set list listchars=eol:¬,tab:\▸\-,trail:~,extends:>,precedes:<,space:␣
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set autoindent
 set clipboard=unnamedplus
 set backspace=indent,eol,start
