@@ -16,6 +16,7 @@ fi
 if [ -d $HOME/go ]; then
     export GOPATH="$HOME/go"
     export PATH="$PATH:$HOME/go/bin"
+    export GOENV_DISABLE_GOPATH=1
 fi
 
 # rust
