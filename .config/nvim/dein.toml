@@ -52,9 +52,17 @@ repo = 'prabirshrestha/async.vim'
 
 [[plugins]]
 repo = 'prabirshrestha/vim-lsp'
+hook_add = '''
+  let g:lsp_highlight_references_enabled = 1
+'''
 
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
+hook_add = '''
+  let g:deoplete#enable_at_startup = 1
+  let g:deoplete#enable_ignore_case = 1
+  set completeopt-=preview
+'''
 
 [[plugins]]
 repo = 'lighttiger2505/deoplete-vim-lsp'
@@ -62,11 +70,21 @@ repo = 'lighttiger2505/deoplete-vim-lsp'
 [[plugins]]
 repo = 'mattn/vim-lsp-settings'
 merged = '0'
-hook_add = """
+hook_add = '''
   let g:lsp_settings = {
-  \ 'typescript-language-server': { 'cmd': [&shell, &shellcmdflag, 'typescript-language-server --stdio']}
+  \ 'clangd': {'cmd': ['clangd-7']},
+  \ 'typescript-language-server': {
+  \   'cmd': [&shell, &shellcmdflag, 'typescript-language-server --stdio']
+  \ },
+  \ 'pyls-all': {
+  \   'workspace_config': {
+  \     'pyls': {
+  \       'configurationSources': ['flake8']
+  \     }
+  \   }
+  \ },
   \}
-"""
+'''
 
 [[plugins]]
 repo = 'mattn/vim-lsp-icons'
