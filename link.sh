@@ -26,6 +26,9 @@ ln -sf ~/.dotfiles/.zsh ~
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/.gitignore_global ~/.gitignore_global
 
+# uncrustify
+ln -sf ~/.dotfiles/.uncrustify.cfg ~/.uncrustify.cfg
+
 # X Window System
 ln -sf ~/.dotfiles/.Xdefaults ~/.Xdefaults
 ln -sf ~/.dotfiles/.xinitrc ~/.xinitrc
