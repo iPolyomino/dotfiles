@@ -1,6 +1,5 @@
-
-# Created by https://www.gitignore.io/api/vim,linux,emacs,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=vim,linux,emacs,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/vim,emacs,visualstudiocode,macos,linux,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=vim,emacs,visualstudiocode,macos,linux,windows
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
@@ -16,6 +15,7 @@ tramp
 # Org-mode
 .org-id-locations
 *_archive
+ltximg/**
 
 # flymake-mode
 *_flymake.*
@@ -67,9 +67,39 @@ flycheck_*.el
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
 [._]*.sw[a-p]
 [._]s[a-rt-v][a-z]
 [._]ss[a-gi-z]
@@ -77,6 +107,7 @@ flycheck_*.el
 
 # Session
 Session.vim
+Sessionx.vim
 
 # Temporary
 .netrwhist
@@ -87,14 +118,39 @@ tags
 
 ### VisualStudioCode ###
 .vscode/*
-!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
-!.vscode/extensions.json
+*.code-workspace
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+.ionide
 
-# End of https://www.gitignore.io/api/vim,linux,emacs,visualstudiocode
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
 
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/vim,emacs,visualstudiocode,macos,linux,windows
