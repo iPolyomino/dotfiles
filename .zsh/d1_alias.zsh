@@ -1,8 +1,8 @@
 alias l="ls"
 alias la="ls -AF"
-alias ll="ls -glhF"
-alias lla="ls -glhAF"
-alias rm="rm -i"
+alias ll="ls -lhF"
+alias lla="ls -lhAF"
+alias rm="rm -ir"
 alias cp="cp -i"
 alias mv="mv -i"
 alias mkidr="mkdir -p"
@@ -24,7 +24,7 @@ alias g="git"
 alias v="nvim"
 
 alias utf8="nkf -Lu -w --overwrite"
-alias localhost="php -S localhost:8000"
+alias localhost="python3 -m http.server"
 alias lh="localhost >> /dev/null 2>&1 &"
 
 case ${OSTYPE} in
@@ -35,7 +35,6 @@ case ${OSTYPE} in
         alias pbcopy="xsel -ib"
         alias pbpaste="xsel -ob"
         alias open="xdg-open"
-        alias x="mupdf"
 
         alias nr="/usr/sbin/service networking restart"
 
