@@ -58,4 +58,4 @@ Emacs.menuBar:              off
 Emacs.verticalScrollBars:   off
 Emacs.reverseVideo:         off
 
-! urxvt.perl-ext-common: resize-font
+urxvt.perl-ext-common: resize-font

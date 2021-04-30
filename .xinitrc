@@ -10,7 +10,7 @@ xset +fp /usr/local/share/fonts
 setxkbmap -option ctrl:nocaps
 xset r rate 200 40
 
-# xcompmgr -c -l0 -t0 -r0 -o.00 > /dev/null 2>&1 &
+xcompmgr -c -l0 -t0 -r0 -o.00 > /dev/null 2>&1 &
 
 exec i3
 
