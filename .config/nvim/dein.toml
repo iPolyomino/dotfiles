@@ -28,7 +28,9 @@ hook_add = '''
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
-hook_add = 'map <C-n> :NERDTreeToggle<CR>'
+hook_add = '''
+  map <C-n> :NERDTreeToggle<CR>
+'''
 
 [[plugins]]
 repo = 'justinmk/vim-dirvish'
@@ -46,6 +48,11 @@ build = './install --all'
 [[plugins]]
 repo = 'junegunn/fzf.vim'
 depends = 'fzf'
+hook_add = '''
+  nnoremap <Leader><Space> :FZF<CR>
+  nnoremap <Leader>f :FZF ~<CR>
+  nnoremap <Leader>F :FZF /<CR>
+'''
 
 [[plugins]]
 repo = 'prabirshrestha/async.vim'

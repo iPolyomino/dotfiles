@@ -42,6 +42,8 @@ set backspace=indent,eol,start
 set formatoptions+=mM
 set textwidth=80
 
+let mapleader = "\<Space>"
+
 imap fd <esc>
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 nnoremap j gj
