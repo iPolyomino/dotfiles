@@ -41,7 +41,7 @@ repo = 'itchyny/lightline.vim'
 
 [[plugins]]
 repo = 'junegunn/fzf'
-build = './install --bin'
+build = './install --all'
 
 [[plugins]]
 repo = 'junegunn/fzf.vim'
