@@ -1,14 +1,20 @@
+[user]
+	email = macbookpromacbookpromacbookpro@gmail.com
+	name = iPolyomino
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[init]
+	defaultBranch = main
+
 [alias]
 	co = checkout
 	br = branch
 	st = status
 
-[core]
-	excludesfile = ~/.gitignore_global
+[pull]
+  rebase = false
 
 [ghq]
 	root = ~/go/src/
-
-[user]
-	email = macbookpromacbookpromacbookpro@gmail.com
-	name = iPolyomino

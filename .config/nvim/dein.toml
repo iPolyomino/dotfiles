@@ -73,9 +73,6 @@ merged = '0'
 hook_add = '''
   let g:lsp_settings = {
   \ 'clangd': {'cmd': ['clangd-7']},
-  \ 'typescript-language-server': {
-  \   'cmd': [&shell, &shellcmdflag, 'typescript-language-server --stdio']
-  \ },
   \ 'pyls-all': {
   \   'workspace_config': {
   \     'pyls': {
