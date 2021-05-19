@@ -16,10 +16,10 @@ repo = 'jiangmiao/auto-pairs'
 [[plugins]]
 repo = 'kana/vim-submode'
 hook_add = '''
-  call submode#enter_with('bufmove', 'n', '', 'sL', '<C-w>>')
-  call submode#enter_with('bufmove', 'n', '', 'sH', '<C-w><')
-  call submode#enter_with('bufmove', 'n', '', 'sK', '<C-w>+')
-  call submode#enter_with('bufmove', 'n', '', 'sJ', '<C-w>-')
+  call submode#enter_with('bufmove', 'n', '', '<C-w>L', '<C-w>>')
+  call submode#enter_with('bufmove', 'n', '', '<C-w>H', '<C-w><')
+  call submode#enter_with('bufmove', 'n', '', '<C-w>K', '<C-w>+')
+  call submode#enter_with('bufmove', 'n', '', '<C-w>J', '<C-w>-')
   call submode#map('bufmove', 'n', '', 'L', '<C-w>>')
   call submode#map('bufmove', 'n', '', 'H', '<C-w><')
   call submode#map('bufmove', 'n', '', 'K', '<C-w>+')
@@ -52,15 +52,14 @@ hook_add = '''
   nnoremap <Leader><Space> :FZF<CR>
   nnoremap <Leader>f :FZF ~<CR>
   nnoremap <Leader>F :FZF /<CR>
+  nnoremap <Leader>g :GFiles<CR>
+  nnoremap <Leader>b :Buffers<CR>
 '''
-
-[[plugins]]
-repo = 'prabirshrestha/async.vim'
 
 [[plugins]]
 repo = 'prabirshrestha/vim-lsp'
 hook_add = '''
-  let g:lsp_highlight_references_enabled = 1
+  nnoremap <C-]> :<C-u>LspDefinition<CR>
 '''
 
 [[plugins]]
@@ -68,7 +67,6 @@ repo = 'Shougo/deoplete.nvim'
 hook_add = '''
   let g:deoplete#enable_at_startup = 1
   let g:deoplete#enable_ignore_case = 1
-  set completeopt-=preview
 '''
 
 [[plugins]]
