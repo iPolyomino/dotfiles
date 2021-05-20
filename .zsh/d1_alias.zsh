@@ -5,7 +5,7 @@ alias lla="ls -lhAF"
 alias rm="rm -ir"
 alias cp="cp -i"
 alias mv="mv -i"
-alias mkidr="mkdir -p"
+alias mkdir="mkdir -p"
 alias grep="grep --color"
 
 alias ..="cd .."

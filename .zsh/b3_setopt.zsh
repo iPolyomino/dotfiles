@@ -1,5 +1,4 @@
 setopt correct
-setopt re_match_pcre
 setopt prompt_subst
 setopt ignore_eof
 setopt nobeep
@@ -23,3 +22,11 @@ setopt complete_in_word
 # directory control
 setopt auto_cd
 setopt auto_pushd
+
+case ${OSTYPE} in
+    darwin*)
+        ;;
+    linux*)
+        setopt re_match_pcre
+        ;;
+esac
