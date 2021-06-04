@@ -29,6 +29,10 @@ alias lh="localhost >> /dev/null 2>&1 &"
 
 case ${OSTYPE} in
     darwin*)
+        alias gcc="gcc-11"
+        alias cc="gcc-11"
+        alias g++="g++-11"
+        alias c++="c++-11"
         ;;
     linux*)
         alias ls="ls --color=auto"
