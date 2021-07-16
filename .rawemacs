@@ -1,5 +1,4 @@
 ;; -*- Emacs-Lisp -*-
-
 (setq initial-buffer-choice t)
 
 ;; swap BS and DEL
@@ -9,8 +8,7 @@
 (when (eq window-system 'x)
   (scroll-bar-mode -1)
   (set-default-font "Source Code Pro")
-  (set-face-attribute 'default nil :height 150)
-)
+  (set-face-attribute 'default nil :height 180))
 
 (put 'upcase-region 'disabled nil)
 
@@ -50,11 +48,8 @@
 (setq linum-format "%4d")
 
 (global-hl-line-mode t)
-
 (show-paren-mode 1)
-
 (global-whitespace-mode 1)
-
 (setq scroll-conservatively 1)
 
 (menu-bar-mode -1)
@@ -65,23 +60,60 @@
 ;; package setup
 
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/"))
 
 (package-initialize)
 
+;; latex build
+(setq org-latex-pdf-process
+    '("platex %b.tex" "platex %b.tex" "dvipdfmx %b.dvi"))
+
+;; Japanese font
+(set-fontset-font t 'japanese-jisx0208
+                  (font-spec :family "IPAExGothic"))
+
+;; delete backward char
+(keyboard-translate ?\C-h ?\C-?)
+
+;; mozc
 (require 'mozc)
 (setq default-input-method "japanese-mozc")
 
-(add-to-list 'load-path "~/lisp")
+;; load path
+(setq load-path
+      (append (list nil
+                    (expand-file-name "~/lisp"))
+              load-path))
+
+;; doc-annotatesc
 (setq doc-view-scale-internally nil)
 (add-hook 'doc-view-mode-hook
-    '(lambda ()
-        (local-set-key "c" 'doc-annotate-add-annotation)
-        (local-set-key [mouse-1] 'doc-annotate-add-annotation)))
+          '(lambda ()
+             (local-set-key "c" 'doc-annotate-add-annotation)
+             (local-set-key [mouse-1] 'doc-annotate-add-annotation)))
 (autoload 'doc-annotate-mode "doc-annotate")
 (autoload 'doc-annotate-add-annotation "doc-annotate")
 (add-to-list 'auto-mode-alist '("\\.ant$" . doc-annotate-mode))
 
-(setq org-latex-pdf-process
-    '("platex %b.tex" "platex %b.tex" "dvipdfmx %b.dvi"))
+;; zf
+(require 'zf)
+(zf-mode 1)
+
+;; lookup
+(setq lookup-search-agents
+    '(
+      (ndeb "~/dict/gakken_personal")
+      ))
+(setq lookup-enable-splash nil)
+(autoload 'lookup "lookup" nil t)
+(autoload 'lookup-region "lookup" nil t)
+(autoload 'lookup-pattern "lookup" nil t)
+(global-set-key "\C-c\C-l" 'lookup)
+(global-set-key "\C-cy" 'lookup-region)
+(global-set-key "\C-c\C-y" 'lookup-pattern)
+(setq lookup-default-dictionary-options
+      '((:stemmer .  stem-english)))
+(setq lookup-use-kakasi nil)
