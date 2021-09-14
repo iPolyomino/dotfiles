@@ -81,6 +81,7 @@
 ;; mozc
 (require 'mozc)
 (setq default-input-method "japanese-mozc")
+(global-set-key (kbd "s-SPC") 'toggle-input-method)
 
 ;; load path
 (setq load-path
