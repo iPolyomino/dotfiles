@@ -11,7 +11,7 @@ set hidden
 
 " display setting
 set showcmd
-set number
+set relativenumber
 set ruler
 set wrap
 set cursorline
