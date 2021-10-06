@@ -24,7 +24,7 @@ ln -sf ~/.dotfiles/.zsh ~
 
 # git
 ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -sf ~/.dotfiles/.gitignore_global ~/.gitignore_global
+ln -sf ~/.dotfiles/.config/git ~/.config
 
 # uncrustify
 ln -sf ~/.dotfiles/.uncrustify.cfg ~/.uncrustify.cfg

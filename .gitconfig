@@ -2,9 +2,6 @@
 	email = macbookpromacbookpromacbookpro@gmail.com
 	name = iPolyomino
 
-[core]
-	excludesfile = ~/.gitignore_global
-
 [init]
 	defaultBranch = main
 
