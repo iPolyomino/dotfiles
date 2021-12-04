@@ -8,6 +8,13 @@ alias mv="mv -i"
 alias mkdir="mkdir -p"
 alias grep="grep --color"
 
+alias ymd="date +%y%m%d"
+
+alias pu='pushd'
+alias po='popd'
+alias dirs='dirs -v'
+alias d='dirs'
+
 alias ..="cd .."
 alias ...="cd ../../"
 alias ....="cd ../../../"
