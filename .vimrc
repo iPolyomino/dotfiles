@@ -2,7 +2,7 @@ syntax on
 
 " file setting
 set fenc=utf-8
-set fileencodings=utf-8,euc-jp,sjis,
+set fileencodings=utf-8,euc-jp,sjis
 set fileformats=unix,mac,dos
 set nobackup
 set noswapfile
@@ -32,7 +32,7 @@ set wrapscan
 set hlsearch
 
 " editing setup
-set list listchars=eol:¬,tab:\▸\-,trail:~,extends:>,precedes:<,space:␣
+" set list listchars=eol:¬,tab:\▸\-,trail:~,extends:>,precedes:<,space:␣
 set expandtab
 set tabstop=4
 set shiftwidth=4
