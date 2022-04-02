@@ -14,19 +14,6 @@ repo = 'tomtom/tcomment_vim'
 repo = 'jiangmiao/auto-pairs'
 
 [[plugins]]
-repo = 'kana/vim-submode'
-hook_add = '''
-  call submode#enter_with('bufmove', 'n', '', '<C-w>L', '<C-w>>')
-  call submode#enter_with('bufmove', 'n', '', '<C-w>H', '<C-w><')
-  call submode#enter_with('bufmove', 'n', '', '<C-w>K', '<C-w>+')
-  call submode#enter_with('bufmove', 'n', '', '<C-w>J', '<C-w>-')
-  call submode#map('bufmove', 'n', '', 'L', '<C-w>>')
-  call submode#map('bufmove', 'n', '', 'H', '<C-w><')
-  call submode#map('bufmove', 'n', '', 'K', '<C-w>+')
-  call submode#map('bufmove', 'n', '', 'J', '<C-w>-')
-'''
-
-[[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = '''
   map <C-n> :NERDTreeToggle<CR>
