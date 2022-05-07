@@ -37,3 +37,8 @@ function estart() {
     } > /dev/null 2>&1 & )
   fi
 }
+
+# crontab - disable '-r'
+function crontab() {
+  [[ $@ =~ -[iel]*r ]] && echo '"r" not allowed' || command crontab "$@" ;
+}

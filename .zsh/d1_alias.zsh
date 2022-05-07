@@ -28,7 +28,7 @@ alias et="emacsclient -t"
 alias rawemacs="emacs -q -l ~/.rawemacs"
 
 alias g="git"
-alias v="nvim"
+alias v="vim"
 
 alias utf8="nkf -Lu -w --overwrite"
 alias localhost="python3 -m http.server"
