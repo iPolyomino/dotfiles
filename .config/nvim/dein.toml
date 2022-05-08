@@ -66,7 +66,7 @@ repo = 'rust-lang/rust.vim'
 repo = 'mattn/vim-lsp-settings'
 hook_add = '''
   let g:lsp_settings = {
-  \ 'clangd': {'cmd': ['clangd-7']},
+  \ 'clangd': {'cmd': ['clangd']},
   \ 'pyls-all': {
   \   'workspace_config': {
   \     'pyls': {
