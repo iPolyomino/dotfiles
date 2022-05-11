@@ -1,21 +1,19 @@
 ;; -*- Emacs-Lisp -*-
 
-(setq initial-buffer-choice t)
-
 ;; swap BS and DEL
 (keyboard-translate ?\C-h ?\C-?)
 
-;; X11 specific
-(when (eq window-system 'x)
-  (scroll-bar-mode -1)
-  (set-default-font "Source Code Pro")
-  (set-face-attribute 'default nil :height 200)
-)
+;; display settings
+(menu-bar-mode -1)
+(show-paren-mode t)
+(global-hl-line-mode t)
+(global-display-line-numbers-mode)
 
+;; editing settings
+(setq scroll-conservatively 1)
 (put 'upcase-region 'disabled nil)
-
-;; disable scratch message
-(setq initial-scratch-message "")
+(put 'downcase-region 'disabled nil)
+(fset 'yes-or-no-p 'y-or-n-p)
 
 ;; Japanese settings
 (set-locale-environment nil)
@@ -29,6 +27,9 @@
 
 ;; don't show startup message
 (setq inhibit-startup-message t)
+
+;; disable scratch message
+(setq initial-scratch-message "")
 
 ;; force to use space
 (setq-default indent-tabs-mode nil)
@@ -45,22 +46,17 @@
 (setq eol-mnemonic-mac "(CR)")
 (setq eol-mnemonic-unix "(LF)")
 
-;; display line number
-(global-linum-mode t)
-(setq linum-format "%4d")
+;; completion
+(setq completion-ignore-case t)
+(setq read-file-name-completion-ignore-case t)
 
-(global-hl-line-mode t)
-
-(show-paren-mode 1)
-
-(global-whitespace-mode 1)
-
-(setq scroll-conservatively 1)
-
-(fset 'yes-or-no-p 'y-or-n-p)
+;; X11 specific
+(when (eq window-system 'x)
+  (set-default-font "Source Code Pro")
+  (set-face-attribute 'default nil :height 200)
+)
 
 ;; package setup
-
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
