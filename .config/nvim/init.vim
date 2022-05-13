@@ -41,7 +41,7 @@ set autoindent
 set clipboard=unnamedplus
 set backspace=indent,eol,start
 set formatoptions+=mM
-set textwidth=80
+" set textwidth=80
 
 let mapleader = "\<Space>"
 

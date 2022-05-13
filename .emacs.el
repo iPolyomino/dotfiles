@@ -11,6 +11,7 @@
 
 ;; editing settings
 (setq scroll-conservatively 1)
+(setq visible-bell 1)
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -34,7 +35,6 @@
 ;; force to use space
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
-(setq indent-line-function 'insert-tab)
 
 ;; don't make backup file
 (setq make-backup-files nil)
