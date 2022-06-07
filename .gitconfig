@@ -1,17 +1,17 @@
 [user]
-	email = macbookpromacbookpromacbookpro@gmail.com
-	name = iPolyomino
+    name = iPolyomino
+    email = macbookpromacbookpromacbookpro@gmail.com
 
 [init]
-	defaultBranch = main
+    defaultBranch = main
 
 [alias]
-	co = checkout
-	br = branch
-	st = status
+    co = checkout
+    br = branch
+    st = status
 
 [pull]
-  rebase = false
+    rebase = false
 
 [ghq]
-	root = ~/go/src/
+    root = ~/go/src/
