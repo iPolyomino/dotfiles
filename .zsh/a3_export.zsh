@@ -6,6 +6,14 @@ export HISTFILE=${HOME}/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=100000
 
+# Homebrew
+if [ -d /opt/homebrew ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    export ZPLUG_HOME=$(brew --prefix)/opt/zplug
+    source $ZPLUG_HOME/init.zsh
+fi
+
+
 # deno
 if [ -d $HOME/.deno ]; then
     export DENO_INSTALL="/home/hagi/.deno"
@@ -40,3 +48,9 @@ fi
 if [ -d $HOME/.tex/bib ]; then
     export BIBINPUTS="$BIBINPUTS:$HOME/.tex/bib/"
 fi
+
+# zplug
+[ -f ~/.zplug/init.zsh ] && source ~/.zplug/init.zsh
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
