@@ -39,7 +39,7 @@ set shiftwidth=4
 set autoindent
 set clipboard=unnamedplus
 
-imap fd <esc>
+" imap fd <esc>
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 nnoremap j gj
 nnoremap k gk

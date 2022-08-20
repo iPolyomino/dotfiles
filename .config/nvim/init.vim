@@ -45,7 +45,7 @@ set formatoptions+=mM
 
 let mapleader = "\<Space>"
 
-imap fd <esc>
+" imap fd <esc>
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 nnoremap j gj
 nnoremap k gk
