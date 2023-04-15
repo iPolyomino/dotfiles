@@ -38,6 +38,10 @@ vim.opt.autoindent=true
 vim.opt.clipboard='unnamedplus'
 vim.opt.backspace='indent,eol,start'
 
+vim.api.nvim_set_keymap('n', 'j', 'gj', {noremap = true})
+vim.api.nvim_set_keymap('n', 'k', 'gk', {noremap = true})
+vim.api.nvim_set_keymap('n', '<Esc><Esc>', ':set nohlsearch!<CR>', {})
+
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
