@@ -31,12 +31,15 @@ vim.opt.wrapscan=true
 vim.opt.hlsearch=true
 
 -- editing setup
-vim.opt.expandtab=true
+vim.opt.list=true
+vim.opt.listchars='tab:▸-,trail:~'
 vim.opt.tabstop=2
 vim.opt.shiftwidth=2
 vim.opt.autoindent=true
 vim.opt.clipboard='unnamedplus'
 vim.opt.backspace='indent,eol,start'
+
+vim.g.mapleader=' '
 
 vim.api.nvim_set_keymap('n', 'j', 'gj', {noremap = true})
 vim.api.nvim_set_keymap('n', 'k', 'gk', {noremap = true})
@@ -65,6 +68,8 @@ require('lazy').setup({
   'jiangmiao/auto-pairs',
   'scrooloose/nerdtree',
   'itchyny/lightline.vim',
+  'junegunn/fzf',
+  'junegunn/fzf.vim',
   'mattn/emmet-vim',
 })
 
@@ -105,3 +110,8 @@ cmp.setup({
     ghost_text = true,
   },
 })
+
+vim.api.nvim_set_keymap('n', '<C-n>', ':NERDTreeToggle<CR>', {noremap = true})
+vim.api.nvim_set_keymap('n', '<Leader><Space>', ':FZF<CR>', {noremap = true})
+vim.api.nvim_set_keymap('n', '<Leader>f', ':FZF ~<CR>', {noremap = true})
+vim.api.nvim_set_keymap('n', '<Leader>F', ':FZF /', {noremap = true})
