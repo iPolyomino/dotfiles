@@ -114,4 +114,4 @@ cmp.setup({
 vim.api.nvim_set_keymap('n', '<C-n>', ':NERDTreeToggle<CR>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<Leader><Space>', ':FZF<CR>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<Leader>f', ':FZF ~<CR>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<Leader>F', ':FZF /', {noremap = true})
+vim.api.nvim_set_keymap('n', '<Leader>F', ':FZF /<CR>', {noremap = true})
