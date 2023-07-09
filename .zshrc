@@ -1,9 +1,8 @@
 for i in ~/.zsh/*.zsh; do
-    if [ $i = "$HOME/.zsh/z1_zplug.zsh" ] && type zplug >/dev/null 2>&1; then
-        source $i
-    else
-        source $i
+    if [ "$i" = "$HOME/.zsh/z1_zplug.zsh" ] && ! type zplug > /dev/null 2>&1; then
+        continue
     fi
+    source $i
 done
 
 # ssh agent
