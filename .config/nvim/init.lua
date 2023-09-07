@@ -65,7 +65,6 @@ require('lazy').setup({
   'williamboman/mason-lspconfig',
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',
-  'hrsh7th/vim-vsnip',
   'jiangmiao/auto-pairs',
   'scrooloose/nerdtree',
   'itchyny/lightline.vim',
