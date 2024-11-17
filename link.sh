@@ -10,6 +10,7 @@ ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 ln -sf ~/.dotfiles/.config/nvim ~/.config
 cp -i ~/.dotfiles/.spacemacs ~/.spacemacs
 ln -sf ~/.dotfiles/.rawemacs ~/.rawemacs
+ln -sf ~/.dotfiles/.emacs.el ~/.emacs.el
 
 # makefile
 ln -sf ~/.dotfiles/.Makefile ~/.Makefile

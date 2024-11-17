@@ -5,7 +5,6 @@
 
 ;; display settings
 (menu-bar-mode -1)
-(tool-bar-mode -1)
 (show-paren-mode t)
 (global-hl-line-mode t)
 (global-display-line-numbers-mode)
@@ -80,12 +79,3 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
-
-
-;; custom
-(custom-set-variables
- '(ansi-color-names-vector
-   ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
- '(custom-enabled-themes '(deeper-blue)))
-(custom-set-faces
- )
