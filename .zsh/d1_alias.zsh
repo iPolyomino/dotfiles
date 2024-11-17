@@ -15,10 +15,6 @@ alias po='popd'
 alias dirs='dirs -v'
 alias d='dirs'
 
-alias ..="cd .."
-alias ...="cd ../../"
-alias ....="cd ../../../"
-
 alias ed="emacs --daemon"
 alias ekill="emacsclient -e '(kill-emacs)'"
 alias erestart="ekill && estart"
@@ -37,20 +33,16 @@ alias lh="localhost >> /dev/null 2>&1 &"
 case ${OSTYPE} in
     darwin*)
         alias ls="ls -G"
-        alias gcc="gcc-11"
-        alias cc="gcc-11"
-        alias g++="g++-11"
-        alias c++="c++-11"
+        alias gcc="gcc-14"
+        alias cc="gcc-14"
+        alias g++="g++-14"
+        alias c++="c++-14"
         ;;
     linux*)
         alias ls="ls --color=auto"
         alias pbcopy="xsel -ib"
         alias pbpaste="xsel -ob"
         alias open="xdg-open"
-
-        alias nr="/usr/sbin/service networking restart"
-
-        alias zoomannotate="xcompmgr -c -l0 -t0 -r0 -o.00"
         ;;
 esac
 
@@ -59,7 +51,3 @@ function run_background() {
         alias $1="$1 > /dev/null 2>&1 &"
     fi
 }
-
-run_background mendeleydesktop
-run_background spotify
-run_background zoom
