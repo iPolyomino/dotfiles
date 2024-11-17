@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec pidof urxvt || urxvt -e tmux
+bindsym $mod+Return exec pidof alacritty || alacritty -e tmux
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -171,7 +171,7 @@ workspace 10 output secondary
 exec --no-startup-id feh --randomize --bg-scale ~/.config/i3/wallpapers/*
 
 # terminal
-bindsym Mod1+Control+1 exec pidof urxvt || urxvt -e tmux
+bindsym Mod1+Control+1 exec pidof alacritty || alacritty -e tmux
 
 # emacs
 bindsym Mod1+Control+2 exec pidof emacs || emacs &
