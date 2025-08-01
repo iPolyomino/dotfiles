@@ -74,19 +74,7 @@ require('lazy').setup({
 })
 
 require('mason').setup()
-require('mason-lspconfig').setup_handlers({ function(server)
-  local opt = {
-    on_attach = function(client, bufnr)
-      local opts = { noremap=true, silent=true }
-      vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
-      vim.cmd 'autocmd BufWritePre * lua vim.lsp.buf.format()'
-    end,
-    capabilities = require('cmp_nvim_lsp').default_capabilities(
-      vim.lsp.protocol.make_client_capabilities()
-    )
-  }
-  require('lspconfig')[server].setup(opt)
-end })
+require('mason-lspconfig').setup()
 
 local cmp = require('cmp')
 cmp.setup({
