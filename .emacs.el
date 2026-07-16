@@ -5,6 +5,7 @@
 
 ;; display settings
 (menu-bar-mode -1)
+(tool-bar-mode -1)
 (show-paren-mode t)
 (global-hl-line-mode t)
 (global-display-line-numbers-mode)
